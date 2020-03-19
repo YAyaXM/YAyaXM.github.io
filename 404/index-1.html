@@ -73,6 +73,8 @@
 <!--  代码渲染  -->
 <link rel="stylesheet" href="/css/prism_coy.css" />
 <link rel="stylesheet" href="/css/typo.css" />
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <!-- 文章页 -->
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
@@ -140,40 +142,29 @@
             </div>
 
             <!-- Post Comments -->
-            
-    <!-- 使用 DISQUS -->
-<div id="disqus-comment">
-    <div id="disqus_thread"></div>
+           <div>
+              
+    ...
+    <section>
+      <div id="gitalk-container"></div>
+    </section>
 
+              <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<!-- <script src="https://geektutu.github.io/hexo-theme-geektutu/js/gitalk.min.js"></script> -->
+<!-- 臨時解決方案 --> <script src="https://unpkg.com/gitalk/dist/gitalk.js"></script>
 <script type="text/javascript">
-    var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/404/index-1.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/404/index-1.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
+   var gitalk = new Gitalk({
+        clientID: '2793c6d3f53cb44c',
+        clientSecret: 'a21416897bae904e17c18681c0bf261eef285926',
+        id: location.pathname,
+        repo: 'YAyaXM.github.io',
+        owner: 'YAyaXM',
+        admin: 'YAyaXM',
+        distractionFreeMode: 'true'
+    })
+    gitalk.render('gitalk-container')
 </script>
-
-<script type="text/ls-javascript" id="disqus-thread-script">
-    queue.offer(function() {
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document;
-                var s = d.createElement('script');
-                s.src = '//http-miccall-tech.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', + new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        });
-</script>
-
-</div>
-
-<style>
-    #disqus-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
-
-
+            </div>     
         </div>
         <!-- Copyright 版权 start -->
                 <div id="copyright">

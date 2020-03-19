@@ -132,11 +132,19 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >about</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >REVIEW-GAN</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                
+                <h2 id="why-study-generative-models"><a href="#why-study-generative-models" class="headerlink" title="why study generative models?"></a>why study generative models?</h2><p>1.excellent test our ability to use high-dimensional complicated proability distributions<br>2.simulate possible futures for planning or simulate RL<br>3.missing data (provide data)<br>4.multi-modal outputs<br>5.realistic generation tasks</p>
+<h2 id="how-do-generative-models-work-how-do-GANS-compare-to-others"><a href="#how-do-generative-models-work-how-do-GANS-compare-to-others" class="headerlink" title="how do generative models work? how do GANS compare to others?"></a>how do generative models work? how do GANS compare to others?</h2><p>GANS consist of two models : a generator and a discriminator.</p>
+<p>The generator tries to capture the distribution of true examplesfor new data examples generation.</p>
+<p>The discriminator is usually a binary classifier ,discriminatinggenerated examples from true examples as accurately as possible.</p>
+<p><img src="generative.png" alt=""></p>
+<h3 id="generative-algorithms"><a href="#generative-algorithms" class="headerlink" title="generative algorithms"></a>generative algorithms</h3><p>generative algorithms can be classified into two classes: explicit density model and implicit density model.<br>explicit density model assumes the distribution and utillizes true data to train the model containing the distribution or fit the distribution parameters.when finished ,new examples are produced utilizing<br>the learning model or distribution .</p>
+<p>The explicit model density models include maximum likelihood estimation,approximate inference ,and Markov chain method .</p>
+<p>maximum likelihood estimation :$\hat{\theta}= \mathop{\arg\max}\limits_{\quad\quad\theta} [Pr(x_{1\dots i}\mid\theta)] = \mathop{\arg\max}\limits_{\quad\quad\theta}\prod_{i=1}^i[Pr(x_{ i}\mid\theta)]$ </p>
+
             </div>
 
             <!-- Post Comments -->
@@ -147,8 +155,8 @@
 
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/about/index-1.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/about/index-1.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2020/03/19/GANS/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2020/03/19/GANS/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
